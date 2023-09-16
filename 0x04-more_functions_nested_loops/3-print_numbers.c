@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
-*print - number 0-9
+*print_numbers - prints number from 0 to 9 .
 *Return: void
 **/
-
 void print_numbers(void)
 {
 	int i;
