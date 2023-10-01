@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * prime_finder - finds out if a number is prime recursively
+ * div - finds out if a number is prime recursively
  *
- * @x: number to determine if prime
- * @y: number to check if divisor
+ * @n1: number to determine if prime
+ * @n2: number to check if divisor
  *
  * Return: 1 if prime, 0 otherwise
  */
