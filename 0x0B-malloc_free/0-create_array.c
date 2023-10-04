@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * create_array - the function will ccreate an array of type 
+ * create_array - Entry point
  * @size: size of the array
  * @c: charcter
- * return: NULL
+ * Return: NULL
  */
 char *create_array(unsigned int size, char c)
 {
@@ -22,8 +22,8 @@ array = (char *)malloc(size * sizeof(char));
 }
 if (array != 0)
 {
-	for (i = 0; i < size; i++)
-				array[i] = c;
+for (i = 0; i < size; i++)
+array[i] = c;
 }
 return (array);
 }
