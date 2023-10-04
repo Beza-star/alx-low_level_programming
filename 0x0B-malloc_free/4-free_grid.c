@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * free_grid - free a 2-dimensional array created by alloc_grid
  * @grid: a pointer to the first column of the first row of the array
