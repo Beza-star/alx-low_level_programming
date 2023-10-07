@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * main - the main function
- * @argc: number of the argument
- * @argv: array of pointer
- * return: 0
+ * main - function to print file name
+ * @argc: count of the arguments supplied to the program and the
+ * @argv: an array of pointers to the strings
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
