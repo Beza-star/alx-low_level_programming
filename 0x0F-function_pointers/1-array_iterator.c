@@ -7,14 +7,10 @@
  * @action: function pointer
  */
 
-void array_iterator(int *array, size_t size, void (*action)}
+void array_iterator(int *array, size_t size, void (*action))
 {
-unsigned int i;
+	size_t i;
 
-	if (array == NULL || action == NULL)
-		exit(98);
 	for (i = 0; i < size; i++)
-	{
 		action(array[i]);
-	}
 }
