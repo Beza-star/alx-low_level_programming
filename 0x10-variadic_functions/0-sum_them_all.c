@@ -24,4 +24,3 @@ unsigned int i;
 	va_end(arg);
 	return (sum);
 }
-}
