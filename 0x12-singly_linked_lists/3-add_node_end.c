@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * add_node_end - function with two arguments
  * @head: pointer to struct of linked list
  * @str: char type pointer to string
- *
- * Description: adds a new node at the end of linked list
- * Return: address of new element
+ * Return: 0
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -15,8 +13,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *end_node, *cursor;
 
 	end_node = malloc(sizeof(list_t));
-	if (end_node == NULL)
-		return (NULL);
+	if (end_node == 0)
+		return (0);
 
 	if (str)
 	{
@@ -27,14 +25,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 	{
-		end_node->str = NULL;
+		end_node->str = 0;
 		end_node->len = 0;
 	}
-	end_node->next = NULL;
+	end_node->next = 0;
 	if (*head)
 	{
 	cursor = *head;
-	while (cursor->next != NULL)
+	while (cursor->next != 0)
 		cursor = cursor->next;
 	cursor->next = end_node;
 	}
@@ -45,18 +43,16 @@ list_t *add_node_end(list_t **head, const char *str)
 
 /**
  * *_strdup - function with one argument
- * @str: string argument
- *
- * Description: returns a pointer to allocated space in memory
- * Return: pointer
+ * @str: string 
+ * Return: 0
  */
 char *_strdup(const char *str)
 {
 	int i, j;
 	char *ptr;
 
-	if (str == NULL)
-		return (NULL);
+	if (str == 0)
+		return (0);
 	i = 0;
 	while (*(str + i) != '\0')
 	{
