@@ -1,12 +1,10 @@
 #include <stdlib.h>
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * free_list - function with one argument
  * @head: pointer to list_t
- *
- * Description: frees a list
- * Return: na
+ * Return: 0
  */
 void free_list(list_t *head)
 {
